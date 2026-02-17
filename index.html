@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="LOGO-modified.png">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="LOGO-modified.png" alt="logo de la compañia">      
+        </a>
+        <nav>
+            <a href="index.html" class="nav-link"><b><i>Inicio</i></b></a>
+            <a href="javascript:void(0)" onclick="openAbout()" class="nav-link"><b><i>Sobre Mí</i></b></a>
+            <a href="#" id="contactBtn" class="nav-link"><b><i>Contacto</i></b></a>
+        </nav>
+    </header>
+
+<!-- BARRA DE BUSQUEDA -->
+
+<div class="search-box">
+  <input type="text" id="searchInput" placeholder="Buscar juego...">
+</div>
+
+<!-- BARRA DE BUSQUEDA -->
+
+
+<!-- JUEGOS "AGREGAR MAS" -->
+
+<div class="games">
+
+  <div class="game-card"
+     data-title="Pizza Delivery v0.1"
+     data-link="https://www.mediafire.com/file/okkaogdl5ngo8yy/Pizza_Delivery_v0.1.iso/file"
+     data-original-size="42 MB"
+     data-compressed-size="37 MB">
+  <div class="game-img" style="background-image: url('https://imgs.search.brave.com/sY-LsvrMSzoOMpLCjjpRNR75HL0iadBRwI5FAmmM73M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hLnRo/dW1icy5yZWRkaXRt/ZWRpYS5jb20vcFRv/TUxieEo2dWtFZ3VL/NElJNkZXMGZmMG1U/c3gyN01CTzF4UVRS/R3UxMC5qcGc');"></div>
+  <div class="game-title">Pizza Delivery v0.1</div>
+  </div>
+
+    <div class="game-card"
+     data-title="Pizza Delivery v0.2"
+     data-link="https://www.mediafire.com/file/2ksvv35emcl0ndu/Pizza+Delivery+v0.2.iso/file"
+     data-original-size="53 MB"
+     data-compressed-size="44 MB">
+  <div class="game-img" style="background-image: url('https://imgs.search.brave.com/sY-LsvrMSzoOMpLCjjpRNR75HL0iadBRwI5FAmmM73M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hLnRo/dW1icy5yZWRkaXRt/ZWRpYS5jb20vcFRv/TUxieEo2dWtFZ3VL/NElJNkZXMGZmMG1U/c3gyN01CTzF4UVRS/R3UxMC5qcGc');"></div>
+  <div class="game-title">Pizza Delivery v0.2</div>
+  </div>
+
+  <div class="game-card"
+       data-title="Sneak Thief v0.99"
+       data-link="https://drive.google.com/file/d/1QqoM2IEIk9TQ0HLHr85Tax1MsB3lGnB2/view?usp=drive_link"
+       data-original-size="1.6 GB"
+       data-compressed-size="1.1 GB">
+    <div class="game-img" style="background-image: url('https://imgs.search.brave.com/lrnDRi9TqccKqUy-7RE4zR0-cr8BDXjBZlLmxvxtc8k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/Y2xvdWRmbGFyZS5z/dGVhbXN0YXRpYy5j/b20vL3N0ZWFtL2Fw/cHMvNTA4NTUwL2hl/YWRlcl8yOTJ4MTM2/LmpwZw');"></div>
+    <div class="game-title">Sneak Thief v0.99</div>
+  </div>
+
+  <div class="game-card"
+       data-title="My Voice Zoo"
+       data-link="https://drive.google.com/file/d/1MyFcA8bTCI5tazKqzXe10kWyOhJnXQ6t/view?usp=drive_link"
+       data-original-size="167 MB"
+       data-compressed-size="46 MB">
+    <div class="game-img" style="background-image: url('https://imgs.search.brave.com/ecGH_mfLZL5AFzl9Lu6bj9q_Cz22SbvSKuDbD5aZVnA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtc2cud2ludWRm/LmNvbS93dXBsb2Fk/L3h5L2Fwcm9qZWN0/YWRtaW4vajRyTGR1/Q1kuanBnP2ltYWdl/TW9ncjIvdGh1bWJu/YWlsLzYwMHg');"></div>
+    <div class="game-title">My Voice Zoo</div>
+  </div>
+
+  <div class="game-card"
+       data-title="TattleTail"
+       data-link="https://www.mediafire.com/file/uo4j8xpn10i3dhi/Tattletail_%255BOptiX%255D.rar/file"
+       data-original-size="1.2 GB"
+       data-compressed-size="132 MB">
+    <div class="game-img" style="background-image: url('https://imgs.search.brave.com/kf0r3p8lvwDA3JEC-oZgRYKYN9FSzcvvbV2wGiielj4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk1UazFPV1ps/TURVdE1XVXhOaTAw/TlRZMExXRXpORGt0/WWpaaFlUQTROVEEw/T0dZMFhrRXlYa0Zx/Y0djQC5qcGc');"></div>
+    <div class="game-title">TattleTail</div>
+  </div>
+
+  <div class="game-card"
+       data-title="Bully Scholarship Edition"
+       data-link="https://drive.google.com/file/d/10sYUAe73_bP9SbPTQJuOHmLPub575DSS/view?usp=drive_link"
+       data-original-size="4.9 GB"
+       data-compressed-size="1.2 GB">
+    <div class="game-img" style="background-image: url('https://imgs.search.brave.com/Zlos4zvziMRivwboNHrY9C5kkUE0P5mkS61zlpFfb9A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZGlzcGxhdGUuY29t/L2FydHdvcmsvMzgw/eDI3MC8yMDI1LTA5/LTEwLzM0ZWQxMjdl/LTY0ODEtNDgwMy1i/ZGYzLTNkZWFkNTRh/NDRjYy5qcGc');"></div>
+    <div class="game-title">Bully Scholarship Edition</div>
+  </div>
+
+</div>
+
+<!-- JUEGOS "AGREGAR MAS" -->
+
+<div id="gameModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="modalTitle">Nombre del juego</h2>
+
+    <p><b>Cómo instalar:</b><br>
+    <p>EXTRAER CON WINRAR O ULTRAISO</p> <p><b>(DEPENDE EN QUE FORMATO ESTÉ)</b></p> <p>Y ABRIR EL ARCHIVO .EXE QUE CONTENGA LA CARPETA</p></p>
+
+    <!-- Botones centrados -->
+    <div class="modal-buttons">
+      <a id="modalLink" href="#" target="_blank" class="modal-btn">DESCARGAR</a>
+      <a id="modalYT" href="https://youtu.be/x3IkfhyYmVg" target="_blank" class="modal-btn">TUTORIAL</a>
+      <a id="modalConvert" href="javascript:void(0)" class="modal-btn">🔄</a>
+    </div>
+
+<!-- CUADRO DE CONVERSIÓN -->
+    <div id="modalConversion" class="game-info" style="display:none; margin-top:10px; padding:10px; border:1px solid #fff; border-radius:8px; background-color:#222; color:#fff; font-weight:bold;"></div>
+  </div>
+</div>
+
+<script>
+const modal = document.getElementById("gameModal");
+const modalTitle = document.getElementById("modalTitle");
+const modalLink = document.getElementById("modalLink");
+const modalYT = document.getElementById("modalYT");
+const modalConvertBtn = document.getElementById("modalConvert");
+const modalConversion = document.getElementById("modalConversion");
+const closeBtn = modal.querySelector(".close");
+
+let currentOriginalSize = "";
+let currentCompressedSize = "";
+
+// Abrir modal
+document.querySelectorAll(".game-card").forEach(card => {
+  card.addEventListener("click", () => {
+    modal.style.display = "flex";
+    modalTitle.textContent = card.dataset.title;
+    modalLink.href = card.dataset.link;
+    modalYT.href = card.dataset.tutorial || "#";
+
+    currentOriginalSize = card.dataset.originalSize || "";
+    currentCompressedSize = card.dataset.compressedSize || "";
+
+    modalConversion.style.display = "none";
+    modalConversion.textContent = "";
+  });
+});
+
+// Botón 🔄
+modalConvertBtn.addEventListener("click", () => {
+  if(currentOriginalSize && currentCompressedSize){
+    // Extraer número y unidad
+    const origMatch = currentOriginalSize.match(/([\d.]+)\s*(GB|MB)/i);
+    const compMatch = currentCompressedSize.match(/([\d.]+)\s*(GB|MB)/i);
+    if(origMatch && compMatch){
+      const [ , origValue, origUnit] = origMatch;
+      const [ , compValue, compUnit] = compMatch;
+
+      const origMB = origUnit.toUpperCase() === "GB" ? parseFloat(origValue)*1024 : parseFloat(origValue);
+      const compMB = compUnit.toUpperCase() === "GB" ? parseFloat(compValue)*1024 : parseFloat(compValue);
+
+      const reduction = ((origMB - compMB)/origMB*100).toFixed(1);
+
+      modalConversion.textContent = `Se redujo de ${currentOriginalSize} a ${currentCompressedSize} (${reduction}% menos)`;
+    }
+  } else {
+    modalConversion.textContent = "Información de tamaño no disponible";
+  }
+  modalConversion.style.display = "block";
+});
+
+// Cerrar modal
+closeBtn.onclick = () => modal.style.display = "none";
+window.onclick = e => { if(e.target == modal) modal.style.display = "none"; }
+</script>
+<!-- MODAL SCRIPT -->
+
+<!-- BARRA DE BUSQUEDA SCRIPT -->
+<script>
+const searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("input", () => { // cambio a 'input' para que funcione mientras escribís
+  const value = searchInput.value.toLowerCase().trim(); // todo en minúscula y sin espacios al inicio/final
+
+  document.querySelectorAll(".game-card").forEach(card => {
+    const title = card.dataset.title.toLowerCase(); // título en minúscula
+    if(title.includes(value)) {
+      card.style.display = "block"; // mostrar el juego
+    } else {
+      card.style.display = "none";  // ocultar si no coincide
+    }
+  });
+});
+</script>
+<!-- BARRA DE BUSQUEDA SCRIPT -->
+
+<!-- SOBRE MI SCRIPT -->
+<script>
+function openAbout() {
+  document.getElementById("aboutModal").style.display = "block";
+}
+
+function closeAbout() {
+  document.getElementById("aboutModal").style.display = "none";
+}
+
+window.onclick = function(e) {
+  if (e.target.id === "aboutModal") {
+    closeAbout();
+  }
+}
+</script>
+<!-- SOBRE MI SCRIPT -->
+
+<!-- SOBRE MI -->
+<div id="aboutModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeAbout()">&times;</span>
+    <h2>Sobre Mí</h2>
+    <p>
+      Hola👋🏼, Soy <b>OptiX</b> 🎮<br><br>
+      Optimizo juegos para PCs de bajos recursos, bajo gráficos,
+      quito archivos innecesarios y hago que corran en compus viejas o del gobierno.<br><br>
+      Subo gameplays, configs gráficas y versiones livianas para jugar sin lag.
+    </p>
+  </div>
+</div>
+<!-- SOBRE MI -->
+
+<!-- CONTACTO -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close-contact">&times;</span>
+    <h2>Contacto</h2>
+
+    <a href="https://www.instagram.com/optix.reborn/" target="_blank" class="download-btn">📸 Instagram</a>
+
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=optixreborn@gmail.com" target="_blank" class="download-btn yt-btn">✉ Correo Electronico</a>
+
+    <a href="https://whatsapp.com/channel/0029VbC5NcyFsn0fkmeZHA13" target="_blank" class="download-btn">💻Canal De WhatsApp</a>
+
+    <a href="https://www.youtube.com/@OptiX-XX" target="_blank" class="download-btn">👁‍🗨Youtube</a>
+  </div>
+</div>
+<!-- CONTACTO -->
+
+<!-- CONTACTO SCRIPT -->
+<script>
+const contactModal = document.getElementById("contactModal");
+const contactBtn = document.getElementById("contactBtn");
+const closeContact = document.querySelector(".close-contact");
+
+contactBtn.addEventListener("click", function(e){
+  e.preventDefault();
+  contactModal.style.display = "flex";
+});
+
+closeContact.onclick = () => contactModal.style.display = "none";
+
+window.addEventListener("click", e => {
+    if(e.target == modal) modal.style.display = "none";
+    if(e.target == aboutModal) aboutModal.style.display = "none";
+    if(e.target == contactModal) contactModal.style.display = "none";
+});
+</script>
+<!-- CONTACTO SCRIPT -->
+
+</body>
+</html>
